@@ -1,3 +1,4 @@
+import Country from "../api/country-ui";
 import Pokemon from "../api/pokemon-ui";
 import { Counter } from "../features/counter/counter";
 
@@ -6,6 +7,7 @@ function Home() {
     <div>
       <Counter />
       <Pokemon />
+      <Country />
     </div>
   );
 }
