@@ -1,7 +1,7 @@
-import { useGetCountryByNameQuery } from "./country";
+import { useGetCountriesQuery } from "./country";
 
 export default function Country() {
-  const { data } = useGetCountryByNameQuery();
+  const { data } = useGetCountriesQuery();
   console.log(data);
 
   return data?.map((country, index) => (
