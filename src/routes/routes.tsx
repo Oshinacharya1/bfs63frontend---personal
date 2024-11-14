@@ -4,6 +4,7 @@ import Contact from "../pages/contact";
 import About from "../pages/about";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
+import Posts from "../components/posts.ui";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "/about",
         element: <About />,
+      },
+      {
+        path: "/posts",
+        element: <Posts />,
       },
     ],
   },
