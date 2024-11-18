@@ -1,10 +1,9 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import Home from "../pages/home";
-import Contact from "../pages/contact";
-import About from "../pages/about";
+import Register from "../pages/register";
+import Login from "../pages/login";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
-import Todos from "../components/todos.ui";
 
 export const router = createBrowserRouter([
   {
@@ -24,16 +23,12 @@ export const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/contact",
-        element: <Contact />,
+        path: "/register",
+        element: <Register />,
       },
       {
-        path: "/about",
-        element: <About />,
-      },
-      {
-        path: "/todos",
-        element: <Todos />,
+        path: "/login",
+        element: <Login />,
       },
     ],
   },
