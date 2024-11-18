@@ -4,6 +4,9 @@ import Register from "../pages/register";
 import Login from "../pages/login";
 import Navigation from "../components/navigation";
 import Footer from "../components/footer";
+import Dashboard from "../pages/dashboard";
+import Protected from "../components/protected";
+import Analytics from "../pages/analytics";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +32,22 @@ export const router = createBrowserRouter([
       {
         path: "/login",
         element: <Login />,
+      },
+      {
+        path: "/dashboard",
+        element: (
+          <Protected>
+            <Dashboard />
+          </Protected>
+        ),
+      },
+      {
+        path: "/analytics",
+        element: (
+          <Protected>
+            <Analytics />
+          </Protected>
+        ),
       },
     ],
   },

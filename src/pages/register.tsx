@@ -18,6 +18,7 @@ const Register = () => {
     try {
       const data = await register(formData);
       if (data?.data) {
+        localStorage.setItem("user", "true");
         navigate("/dashboard");
       }
     } catch (error) {

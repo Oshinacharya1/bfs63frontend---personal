@@ -18,6 +18,7 @@ const Login = () => {
     try {
       const data = await login(formData);
       if (data?.data) {
+        localStorage.setItem("user", "true");
         // send user to dashboard page
         navigate("/dashboard");
       }
